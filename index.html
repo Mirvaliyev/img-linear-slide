@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>img-linear-animate</title>
+</head>
+
+<body>
+    <div class="swiper-container"> 
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(img/1.jpg);">
+                <div class="number">01</div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/2.jpg);">
+                <div class="number">02</div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/3.jpg);">
+                <div class="number">03</div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/4.jpg);">
+                <div class="number">04</div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/5.jpg);">
+                <div class="number">05</div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/6.jpg);">
+                <div class="number">06</div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/7.jpg);">
+                <div class="number">07</div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(img/8.jpg);">
+                <div class="number">08</div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop:true,
+        autoplay:{
+            delay:2000,
+            disableOnInteraction:false,
+        },
+
+      });
+    </script>
+    
+</body>
+
+</html>
